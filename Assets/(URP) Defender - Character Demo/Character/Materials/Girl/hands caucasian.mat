@@ -27,10 +27,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 5
+  version: 9
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -38,7 +38,13 @@ Material:
   m_Name: hands caucasian
   m_Shader: {fileID: -6465566751694194690, guid: df2547abf3148534fad35ffb2a312769,
     type: 3}
-  m_ShaderKeywords: _SPECULAR_SETUP _USE_DETAIL _USE_NORMAL_MAP
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SPECULAR_SETUP
+  - _USE_DETAIL
+  - _USE_NORMAL_MAP
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -52,6 +58,7 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -152,6 +159,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SkinLightingCustomFunction_ebf5caa938dd4d04acb69f5a9671be65_lut_21:
+        m_Texture: {fileID: 2800000, guid: 30372ea629316d94ba1a56ba3fd072fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkinLightingCustomFunction_ebf5caa938dd4d04acb69f5a9671be65_lut_21_Texture2D:
         m_Texture: {fileID: 2800000, guid: 30372ea629316d94ba1a56ba3fd072fb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -386,6 +397,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &5091019247231812615
 MonoBehaviour:
   m_ObjectHideFlags: 11
